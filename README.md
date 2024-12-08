@@ -8,7 +8,7 @@ In the example provided, the program reads reviews from a CSV file and sends the
 
 Since the system is built on the Hugging Face library, you can easily switch to other public language models with minimal changes. However, if your data quality is poor—so poor that even a human would struggle to make sense of the answers—it's recommended to use the latest GPT models, although they can be very costly for large datasets.
 
-Here is a preview of some summarized data analyzed by 2B model: ![images](images/text_2b_model_p2.png). 
+Here is a preview of some summarized data analyzed by 2B model: ![images](images/text_2b_model_p2.png)
 And the 9B model：![images](images/text_9b_model.png)
 
 For a detailed overview, refer to the `result_data_2Bmodel.csv`  and `result_data_9Bmodel.csv` file in the `data` directory. It’s worth noting that the original `category_reasons` didn’t provide a category for design flaws, but the AI still identified and added it to the summary. This is an exciting result! Imagine the potential commercial value that could be unlocked with the right data and team to outpace your competitors.
