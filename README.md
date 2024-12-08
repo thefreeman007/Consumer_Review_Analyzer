@@ -8,7 +8,10 @@ In the example provided, the program reads reviews from a CSV file and sends the
 
 Since the system is built on the Hugging Face library, you can easily switch to other public language models with minimal changes. However, if your data quality is poor—so poor that even a human would struggle to make sense of the answers—it's recommended to use the latest GPT models, although they can be very costly for large datasets.
 
-Here is a preview of some summarized data: ![images](images/text_2b_model_p2.png). For a detailed overview, refer to the `result_data_2Bmodel.csv` file in the `data` directory. It’s worth noting that the original `category_reasons` didn’t provide a category for design flaws, but the AI still identified and added it to the summary. This is an exciting result! Imagine the potential commercial value that could be unlocked with the right data and team to outpace your competitors.
+Here is a preview of some summarized data analyzed by 2B model: ![images](images/text_2b_model_p2.png). 
+And the 9B model：![images](images/text_9b_model.png)
+
+For a detailed overview, refer to the `result_data_2Bmodel.csv`  and `result_data_9Bmodel.csv` file in the `data` directory. It’s worth noting that the original `category_reasons` didn’t provide a category for design flaws, but the AI still identified and added it to the summary. This is an exciting result! Imagine the potential commercial value that could be unlocked with the right data and team to outpace your competitors.
 
 In principle, larger models yield better results. However, due to my limited computing power, I can only demonstrate the 2B and 9B versions. 
 
@@ -31,7 +34,9 @@ Due to the complexity of the Hugging Face installation tutorial and the abundanc
 
 由于该系统基于Hugging Face库，你可以轻松切换到其他公开的大语言模型，只需要做少量修改。然而，如果你的数据质量非常糟糕，以至于即使是人类也难以理解答案，建议使用最新的GPT模型，尽管对于大规模数据集来说，使用GPT模型的费用非常高。
 
-以下是部分总结数据的展示: ![images](images/text_2b_model_p2.png)。详细的汇总请参考`data`目录下的`result_data_2Bmodel.csv`文件。值得注意的是，原始的`category_reasons`并没有提供“设计缺陷”的分类，但AI仍然识别并将其添加到后续总结中。这是一个令人兴奋的结果！可以想象，拥有适当的数据和团队支持时，能够创造出多大的商业价值，轻松打败你的竞争对手。
+以下是部分用2B模型进行分析的总结数据的展示: ![images](images/text_2b_model_p2.png)。
+9B数据模型展示![images](images/text_9b_model.png)
+详细的汇总请参考`data`目录下的`result_data_2Bmodel.csv`和`result_data_9Bmodel.csv`文件。值得注意的是，原始的`category_reasons`并没有提供“设计缺陷”的分类，但AI仍然识别并将其添加到后续总结中。这是一个令人兴奋的结果！可以想象，拥有适当的数据和团队支持时，能够创造出多大的商业价值，轻松打败你的竞争对手。
 
 原则上，模型越大，结果越好。由于我的计算能力有限，目前只能演示2B和9B版本。
 
