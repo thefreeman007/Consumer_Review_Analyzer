@@ -33,7 +33,6 @@ def summarize_and_classify_reviews(input_text, model, tokenizer, max_new_tokens=
                              num_beams=5,  # Use beam search to optimize generation results  # 使用束搜索来优化生成结果
                              eos_token_id=tokenizer.eos_token_id,  # Define the end-of-sequence token  # 定义终止标志
                              pad_token_id=tokenizer.pad_token_id  # Define the padding token ID  # 填充token id
-
                              )
 
     # Decode the generated text
@@ -136,9 +135,6 @@ If you are unable to summarize the reason clearly, just respond with "Others".
 
 Please follow this exact format:
 
-Reason: [Your reason here]
-Category: [Your category here]
-
 For example
 Review: "I don’t like the color and feel of the product. It's just not what I imagined."
 Reason: The product didn’t meet my personal preferences.
@@ -178,7 +174,7 @@ if __name__ == "__main__":
 
     # model_path
     # 模型路径
-    model_path = "J:/my_models/gemma2_9b"
+    model_path = "J:/my_models/gemma2_2b"
 
     # Load the model and tokenizer
     # 加载模型和tokenizer
@@ -205,6 +201,8 @@ if __name__ == "__main__":
     # 打印结果以供检查
     print(results_df)
     results_df.to_csv("data/result_data.csv", index=False)
+
+    #results_df=pd.read_csv("data/result_data.csv")
 
     # Count the number of occurrences in each category
     # 统计各分类的数量
