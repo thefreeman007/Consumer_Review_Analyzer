@@ -111,7 +111,7 @@ Due to the complexity of the Hugging Face installation tutorial and the abundanc
 以下是部分数据的展示：
 
 #### **2B 模型输出:**
-![2B 数据模型](images/text_2b_model_p2.png)
+![2B 数据模型](images/text_2b_model.png)
 
 #### **9B 模型输出:**
 ![9B 数据模型](images/text_9b_model.png)
